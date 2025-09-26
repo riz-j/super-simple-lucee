@@ -1,0 +1,11 @@
+services:
+  lucee:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lucee
+    ports: 
+      - "8854:8888"
+    volumes:
+      - ./www:/var/www
+      - ./config/lucee:/opt/lucee/web

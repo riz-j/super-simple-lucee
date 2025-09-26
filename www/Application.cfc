@@ -1,0 +1,3 @@
+component {
+    this.Name = "Lucee";
+}
